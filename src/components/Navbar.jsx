@@ -1,18 +1,15 @@
-import React from 'react'
+import React from "react";
 
 function Navbar() {
   return (
     <nav className="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
-    <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-     
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-         ระบบยืมหนังสือ
+          ระบบยืมหนังสือ
         </span>
-
-    </div>
-  </nav>
-  
-  )
+      </div>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;

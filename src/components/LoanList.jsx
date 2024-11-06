@@ -3,6 +3,8 @@ import { UserPlus } from "react-feather";
 import Modal from "./Modal";
 
 function LoanList() {
+
+  // สร้าง State สำหรับเช็ตค่าต่าง ๆ
   const [loans, setLoans] = useState([]);
   const [open, setOpen] = useState(false);
   const [studentId, setStudentId] = useState("");
@@ -10,10 +12,12 @@ function LoanList() {
   const [bookTitle, setBookTitle] = useState("");
   const [returnDate, setReturnDate] = useState("");
 
+  // ฟังก์ชันที่จะทำงานครั้งเดียว เมื่อคอมโพเนนต์ถูกเรนเดอร์ครั้งแรก
   useEffect(() => {
     fetchLoans();
   }, []);
 
+  // fetch REST api จาก Local host
   const fetchLoans = async () => {
     try {
       const response = await fetch("http://localhost:3000/loan");
@@ -61,6 +65,7 @@ function LoanList() {
     }
   };
 
+  
   const formatThaiDate = (dateString) => {
     const date = new Date(dateString);
     const thaiMonths = [
