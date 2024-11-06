@@ -28,7 +28,7 @@ npm run dev
 
 ### 🧩 โครงสร้างโปรเจ็คนี้่
 ```
-sharing-app/
+loan-library-system/
 ├── public/
 ├── src/
 │   ├── components/
