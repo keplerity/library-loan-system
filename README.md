@@ -1,7 +1,6 @@
 # Loan library system
 
 โปรเจค Loan library system เป็นเว็บแอปพลิเคชันที่พัฒนาด้วย React เหมาะสำหรับการศึกษาและสามารถนำไปต่อยอดได้ตามความต้องการ
-ผมได้แบ่งเป็น 2 ไฟล์ระหว่าง frontend และ bankend คุณสามารถดูได้ที่ลิงค์ https://github.com/keplerity/library-loan-system-Backend
  
 ### 🛠 เทคโนโลยีที่ใช้
 - React - สำหรับโครงสร้างและการจัดการ UI
@@ -28,17 +27,21 @@ npm run dev
 
 ### 🧩 โครงสร้างโปรเจ็คนี้่
 ```
-loan-library-system/
-├── public/
-├── src/
-│   ├── components/
-│   │   ├── LoanList.jsx          # ส่วน List รายการ
-│   │   ├── Modal.jsx             # ส่วนสร้าง Modal
-│   │   └── Navbar.jsx            # ส่วนแสดง Navigation Bar
-│   ├── App.js                    # ไฟล์หลักที่รวม Components ต่าง ๆ
-│   ├── index.js
-│   └── App.css                 # สไตล์ css พื้นฐานของแอป
-└── package.json
+📦 loan-library-system/
+├─ public/
+├─ src/
+│  ├─ components/
+│  │  ├─ LoanList.jsx          # ส่วน List รายการ
+│  │  ├─ Modal.jsx              # ส่วนสร้าง Modal
+│  │  └─ Navbar.jsx            # ส่วนแสดง Navigation Bar
+│  ├─ App.js                           # ไฟล์หลักที่รวม Components ต่าง ๆ
+│  ├─ index.js
+│  └─ App.css                        # สไตล์ css พื้นฐานของแอป
+├─ server/
+│  ├─ model
+│  │  └─ Loan.cjs                # Model สร้างข้อมูลเก็บใน MongoDB
+│  └─ app.cjs                          # ส่วนส่ง API
+└─ package.json
 ```
 
 สามารถ Fork โปรเจคนี้และพัฒนาเพิ่มเติมได้ หากต้องการส่ง Pull Request เพื่อแก้ไขหรือเพิ่มฟีเจอร์ใหม่ ๆ ยินดีต้อนรับนะครับ!
