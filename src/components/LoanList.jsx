@@ -65,7 +65,6 @@ function LoanList() {
     }
   };
 
-  
   const formatThaiDate = (dateString) => {
     const date = new Date(dateString);
     const thaiMonths = [
@@ -84,7 +83,7 @@ function LoanList() {
     ];
     const day = date.getDate();
     const month = thaiMonths[date.getMonth()];
-    const year = date.getFullYear() + 543; // Convert to Buddhist Era
+    const year = date.getFullYear() + 543; // ทำให้เป็นปี พ.ศ.
     return `${day} ${month} ${year}`;
   };
 
